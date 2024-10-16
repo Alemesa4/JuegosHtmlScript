@@ -36,6 +36,8 @@ p{
     width: 70%;
     border-radius: 15px;
     font-weight: bold;
-    border: 2px solid black; /* Borde rojo */
 
 }
+p:not(:empty) {
+    border: 2px solid black; /* Borde rojo */
+  }
