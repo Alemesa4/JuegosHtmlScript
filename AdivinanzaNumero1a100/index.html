@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinanza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Adivina un numero del 1 al 100</h1>
+
+    <div class="Bloque">
+
+    <input type="numer" id="Adivina" min="1" max="100">
+    <br>
+    <input class="boton" type="button" onclick="Advinar()" value="Adivinar">
+    <br>
+    
+    <p id="Resultado">
+        <script>
+            const Numaleatorio = Math.floor(Math.random() * 100) + 1;
+            function Advinar() {
+                const intento = document.getElementById('Adivina').value;
+                const resultado = document.getElementById("Resultado");
+                if (intento == Numaleatorio) {
+                    resultado.textContent = "🥳Felicidades Has acertado el numero";
+                    resultado.style.color = "green";
+                } else if (Numaleatorio > intento) {
+                    resultado.textContent = "📉 Te has quedado corto es mas grande";
+                    resultado.style.color = "red";
+                } else {
+                    resultado.textContent = "📈Te has pasado de largo es mas pequeño";
+                    resultado.style.color = "red";
+
+                }
+
+            }
+
+        </script>
+</div>
+</body>
+
+</html>

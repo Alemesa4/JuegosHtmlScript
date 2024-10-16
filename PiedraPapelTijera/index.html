@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PiedraPapelTijera</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Piedra Papel o Tijera</h1>
+    <div class="Bloque">
+        <input type="button" class="boton" name="Piedra" id="Piedra" value="🪨" onclick="Comprobar('🪨')" />
+        <input type="button" class="boton" name="Papel" id="Papel" value="🗞️" onclick="Comprobar('🗞️')" />
+        <input type="button" class="boton" name="Tijera" id="Tijera" value="✂️" onclick="Comprobar('✂️')" />
+        <p id="resultado"></p>
+    </div>
+    
+    <script>
+        function Comprobar(opcion) {
+            const Numaleatorio = Math.floor(Math.random() * 3) + 1;
+            const resultado = document.getElementById("resultado");
+
+            if (opcion == "🪨") {
+                if (Numaleatorio == 1) {
+                    resultado.textContent = "Habeis empatado los dos habeis sacado 🪨";
+                } else if (Numaleatorio == 2) {
+                    resultado.textContent = "Has perdido el rival ha sacado 🗞️";
+                    resultado.style.color = "red";
+                } else {
+                    resultado.textContent = "Has ganado el rival ha sacado ✂️";
+                    resultado.style.color = "green";
+                }
+            }
+            if (opcion == "🗞️") {
+                if (Numaleatorio == 2) {
+                    resultado.textContent = "Habeis empatado los dos habeis sacado 🗞️";
+                } else if (Numaleatorio == 3) {
+                    resultado.textContent = "Has perdido el rival ha sacado ✂️";
+                    resultado.style.color = "red";
+                } else {
+                    resultado.textContent = "Has ganado el rival ha sacado 🪨";
+                    resultado.style.color = "green";
+                }
+            }
+            if (opcion == "✂️") {
+                if (Numaleatorio == 3) {
+                    resultado.textContent = "Habeis empatado los dos habeis sacado ✂️";
+                } else if (Numaleatorio == 1) {
+                    resultado.textContent = "Has perdido el rival ha sacado 🪨";
+                    resultado.style.color = "red";
+                } else {
+                    resultado.textContent = "Has ganado el rival ha sacado 🗞️ ";
+                    resultado.style.color = "green";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

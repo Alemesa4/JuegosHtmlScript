@@ -1,0 +1,41 @@
+.Bloque{
+margin: 0 auto;
+text-align: center;
+background-color: #28666E;
+width: 70%;
+border-radius: 15px;
+box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+padding: 10px;
+}
+body{
+margin: 0 auto;
+text-align: center;
+justify-content: center;
+}
+.boton{
+margin: 10px;
+background-color: #7C9885;
+color: white;
+font-weight: bold;
+font-size: xx-large;
+}
+.boton:hover{
+    background-color: #527F7A;
+}
+input{
+    border: 2px solid black; 
+    border-radius: 100%;
+    margin :20px
+    
+    
+}
+p{
+    margin: 5px auto;
+    margin-bottom: 10px;
+    background-color: #527F7A;
+    width: 70%;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 2px solid black; /* Borde rojo */
+
+}
