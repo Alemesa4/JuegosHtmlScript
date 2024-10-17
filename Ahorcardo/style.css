@@ -1,0 +1,36 @@
+.Bloque{
+margin: 0 auto;
+text-align: center;
+background-color: #28666E;
+width: 70%;
+border-radius: 15px;
+box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+padding: 10px;
+}
+#Palabra{
+    font-size: xx-large;
+  }
+body{
+margin: 0 auto;
+text-align: center;
+justify-content: center;
+}
+
+.boton:hover{
+    background-color: #527F7A;
+}
+
+p{
+    margin: 5px auto;
+    margin-bottom: 10px;
+    background-color: #527F7A;
+    width: 70%;
+    border-radius: 15px;
+    font-weight: bold;
+
+}
+p:not(:empty) {
+    border: 2px solid black; /* Borde rojo */
+  }
+
+ 
