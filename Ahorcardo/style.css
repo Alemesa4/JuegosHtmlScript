@@ -32,5 +32,20 @@ p{
 p:not(:empty) {
     border: 2px solid black; /* Borde rojo */
   }
-
- 
+.fallo{
+  display: flex;
+  background-color: white;
+  border: green solid;
+  border-radius: 50%;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+}
+ .fallos{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+ }
+ span{
+  font-size: xx-large;
+ }

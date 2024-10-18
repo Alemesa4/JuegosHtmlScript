@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ahorcado</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -11,15 +11,34 @@
 
     <div class="Bloque">
       <p id="Palabra"></p>
-      <input type="text" id="Adivina" placeholder="Letra" />
+      <input type="text" id="Adivina" placeholder="Letra" maxlength="1" pattern="[a-zA-Z]" title="Solo se permite una letra de la a-z"/>
       <br>
       <br>
       <input class="boton" type="button" onclick="intento()" value="Adivinar" />
-      <div class="fallo">
+      <br>
+      <div class="fallos">
+      <div id="cabeza" class="fallo">
         <span>😱</span>
+      </div>
+      <div id="cuerpo" class="fallo">
+        <span>👕</span>
+      </div>
+      <div id="manoiz" class="fallo">
+        <span>🫷</span>
+      </div>
+      <div id="manode"class="fallo">
+        <span>🫸</span>
+      </div>
+      <div id="pataiz" class="fallo">
+        <span>🦿</span>
+      </div>
+      <div id="patade" class="fallo">
+        <span>🦵</span>
+      </div>
     </div>
+    <p id="Resultadop"></p>
     </div>
-    
+
     <script src="script.js"></script>
   </body>
 </html>
