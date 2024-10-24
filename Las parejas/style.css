@@ -28,3 +28,12 @@ body {
     justify-content: center;
 text-align: center;
 }
+p{
+    margin: 5px auto;
+    margin-bottom: 10px;
+    background-color: #527F7A;
+    width: 70%;
+    border-radius: 15px;
+    font-weight: bold;
+
+}
